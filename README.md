@@ -13,10 +13,10 @@ O projeto é separado em duas frentes principais:
 
 Esse módulo é responsável pelos sensores utilizados pelo Wall-IXO. Utilizam-se 3 sensores ultrassônicos do tipo HC-SR04. O greenpill, quando envia um sinal para o pino TRIGGER, recebe uma resposta do sensor por meio do pino ECHO, e por meio dessa resposta é possível calcular a distância do sensor até o obstáculo.
 
-![Módulo Sensorial](/modulosensorial.png)
+![Módulo Sensorial](/imagens/modulosensorial.png)
 
-![Sensor HC-SR04](/sensor.png)
+![Sensor HC-SR04](/imagens/sensor.png)
 
 # Módulo Motor
 
-![Módulo Motor](/modulomotor.png)
+![Módulo Motor](/imagens/modulomotor.png)
