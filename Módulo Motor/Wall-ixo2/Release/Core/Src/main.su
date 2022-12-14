@@ -1,0 +1,13 @@
+../Core/Src/main.c:145:6:anda	8	static
+../Core/Src/main.c:176:6:para	0	static
+../Core/Src/main.c:160:6:andaPouco	8	static
+../Core/Src/main.c:250:6:desliga	0	static
+../Core/Src/main.c:226:6:gira180	8	static
+../Core/Src/main.c:185:6:gira90	8	static
+../Core/Src/main.c:113:6:sensorMeio	8	static
+../Core/Src/main.c:204:6:gira90Nega	8	static
+../Core/Src/main.c:119:6:sensorEsquerdo	8	static
+../Core/Src/main.c:130:6:sensorDireita	8	static
+../Core/Src/main.c:266:6:SystemClock_Config	72	static,ignoring_inline_asm
+../Core/Src/main.c:67:5:main	112	static,ignoring_inline_asm
+../Core/Src/main.c:457:6:Error_Handler	0	static,ignoring_inline_asm
