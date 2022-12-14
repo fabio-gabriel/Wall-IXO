@@ -61,11 +61,6 @@ void microDelay(uint32_t uSec);
 /* USER CODE BEGIN 0 */
 const float speedOfSound = 0.0343/2;
 float distance;
-float distance2;
-float distance3;
-uint32_t val;
-uint32_t val2;
-uint32_t val3;
 /* USER CODE END 0 */
 
 /**
@@ -132,23 +127,15 @@ int main(void)
 	}
 
 	// Calcula a distância, 2.8 compensa uma imprecisão do microDelay()
-		distance2 = ((cont + 0.0f) * 2.8 * speedOfSound) * 6.72074;
+	distance2 = ((cont + 0.0f) * 2.8 * speedOfSound) * 6.72074;
 
+	// Se a distancia menor que 10, envia um sinal para os motores
 
-
-
-		// Se a distancia menor que 10, envia um sinal para os motores
-
-
-		if (distance2 < 10){
-			HAL_GPIO_WritePin(OUTPUT2_GPIO_Port, OUTPUT2_Pin, GPIO_PIN_SET);
-		} else {
-			HAL_GPIO_WritePin(OUTPUT2_GPIO_Port, OUTPUT2_Pin, GPIO_PIN_RESET);
-		}
-
-		val = HAL_GPIO_ReadPin(OUTPUT_GPIO_Port, OUTPUT_Pin);
-		val2 = HAL_GPIO_ReadPin(OUTPUT2_GPIO_Port, OUTPUT2_Pin);
-		val3 = HAL_GPIO_ReadPin(OUTPUT3_GPIO_Port, OUTPUT3_Pin);
+	if (distance2 < 10){
+		HAL_GPIO_WritePin(OUTPUT2_GPIO_Port, OUTPUT2_Pin, GPIO_PIN_SET);
+	} else {
+		HAL_GPIO_WritePin(OUTPUT2_GPIO_Port, OUTPUT2_Pin, GPIO_PIN_RESET);
+	}
 
 
 	// Delay de 0.25s de espera até a distância seja calculada novamente
